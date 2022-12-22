@@ -1,2 +1,2 @@
-# lesson_schedule
+# Lesson schedule
 My schedule for lesson
