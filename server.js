@@ -4,9 +4,15 @@ const favicon = require('serve-favicon');
 
 const app = express();
 
-const PORT = 8000;
+const PORT = 80;
 
 const createPath = (page) => path.resolve(__dirname, 'files', `${page}.html`);
+
+function intervalFunc() {
+  console.log('Cant stop me now!');
+}
+
+setInterval(intervalFunc, 10000);
 
 app.listen(PORT, (error) => {   
     error ? console.log(error) : console.log(`Server listening port ${PORT}`);
