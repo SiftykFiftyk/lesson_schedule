@@ -1,0 +1,146 @@
+{
+    "schedule": {
+        "groups": {
+            "group1": [
+                {
+                    "weekday": "05.12",
+                    "day": "ПН",
+                    "8:10-8:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "9:00-9:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "9:55-11:30": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "12:15-13:55": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:00-14:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:50-15:35": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "15:45-17:20": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "17:30-19:05": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    }
+                },
+                {
+                    "weekday": "05.12",
+                    "day": "ВТ",
+                    "8.10-9:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "9:55-11:30": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "12:15-13:55": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:00-14:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:50-15:35": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "15:45-17:20": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "17:30-19:05": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    }
+                }
+            ],
+            "group2": [
+                {
+                    "weekday": "05.12",
+                    "day": "ПН",
+                    "8:10-8:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "9:00-9:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "9:55-11:30": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "12:15-13:55": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:00-14:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:50-15:35": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "15:45-17:20": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "17:30-19:05": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    }
+                },
+                {
+                    "weekday": "05.12",
+                    "day": "ВТ",
+                    "8.10-9:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "9:55-11:30": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "12:15-13:55": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:00-14:45": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "14:50-15:35": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "15:45-17:20": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    },
+                    "17:30-19:05": {
+                        "lesson": "Predmet",
+                        "cabinet": "cab"
+                    }
+                }
+            ]
+        }
+    }
+}

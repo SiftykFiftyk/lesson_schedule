@@ -1,31 +1,63 @@
 const express = require('express');
-const path = require('path');
+const xlsx = require('xlsx');
+const axios = require('axios');
 const favicon = require('serve-favicon');
+const fs = require("fs");
+const path = require('path');
 
 const app = express();
 
 const PORT = 80;
 
-const createPath = (page) => path.resolve(__dirname, 'files', `${page}.html`);
+const htmlPath = (page) => path.resolve(__dirname, 'files', `${page}.html`);
+const xlsxPath = (xlsxPage) => path.resolve(__dirname, 'files', 'data', `${xlsxPage}.xlsx`);
 
-function intervalFunc() {
-  console.log('Cant stop me now!');
-}
+var data = {};
 
-setInterval(intervalFunc, 10000);
+app.listen(PORT, (error) => {
+  error ? console.log(error) : console.log(`Server listening port ${PORT}`);
+});
 
-app.listen(PORT, (error) => {   
-    error ? console.log(error) : console.log(`Server listening port ${PORT}`);
-}); 
+app.get('/json', (req, res) => {
+  res.send(data);
+});
 
 app.get('/', (req, res) => {
-    res.sendFile(createPath('index'));
+  res.sendFile(htmlPath('index'));
 });
 
 app.use(favicon('favicon.ico'));
 
 app.use((req, res) => {
-    res
-     .status(404)
-     .sendFile(createPath('error'));
+  res
+    .status(404)
+    .sendFile(htmlPath('error'));
 });
+
+updateXlsx();
+
+async function updateXlsx() {
+  const url = 'https://docs.google.com/spreadsheets/export?format=xlsx&id=1e2icr-P3FD9gQBUhsJZTTVyzt6UVSeBL'
+  const writer = fs.createWriteStream(xlsxPath('data'));
+
+  const response = await axios({
+    url,
+    method: 'GET',
+    responseType: 'stream'
+  });
+
+  response.data.pipe(writer);
+
+  return new Promise((resolve, reject) => {
+    writer.on('finish', () => {
+      updateJson();
+    });
+    writer.on('error', reject);
+  });
+}
+
+function updateJson() {
+
+}
+
+setInterval(updateXlsx, 600000);
